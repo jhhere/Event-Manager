@@ -5,5 +5,6 @@ contents = CSV.open "event_attendees.csv", headers: true, header_converters: :sy
 
 contents.each do |row|
   firstname = row[:first_name]
-  puts firstname
+  zipcode = row[:zipcode]
+  puts "#{firstname} #{zipcode}"
 end
